@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SportCozy  -   Jersey Premium</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Bebas Neue'],
+            sans: ['Inter']
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="bg-white text-black font-sans pt-20 md:pt-0">
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur border-b border-gray-200">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <h1 class="font-display text-2xl">
+      Sport<span class="text-red-500">Cozy</span>
+    </h1>
+
+    <div class="hidden md:flex gap-8 text-sm text-gray-600">
+      <a href="#hero" class="hover:text-black">Home</a>
+      <a href="#collections" class="hover:text-black">Koleksi</a>
+      <a href="#why" class="hover:text-black">Keunggulan</a>
+      <a href="#testimoni" class="hover:text-black">Testimoni</a>
+      <a href="#footer" class="hover:text-black">Kontak</a>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <a href="#shop-now" class="bg-black text-white px-4 py-2 rounded-lg text-sm font-semibold hover:scale-105 transition">
+        Shop Now
+      </a>
+      
+      <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+    </div>
+  </div>
+
+<div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white border-b border-gray-200 shadow-xl p-6 flex flex-col gap-2 text-left font-semibold">
+  <a href="#hero" class="mobile-link group py-3 px-4 rounded-xl flex justify-between items-center transition-all duration-300 hover:bg-gray-50 hover:text-red-500">
+    Home
+    <i class="fa-solid fa-arrow-right text-xs opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+  </a>
+  
+  <a href="#collections" class="mobile-link group py-3 px-4 rounded-xl flex justify-between items-center transition-all duration-300 hover:bg-gray-50 hover:text-red-500">
+    Koleksi
+    <i class="fa-solid fa-arrow-right text-xs opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+  </a>
+
+  <a href="#why" class="mobile-link group py-3 px-4 rounded-xl flex justify-between items-center transition-all duration-300 hover:bg-gray-50 hover:text-red-500">
+    Keunggulan
+    <i class="fa-solid fa-arrow-right text-xs opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+  </a>
+
+  <a href="#testimoni" class="mobile-link group py-3 px-4 rounded-xl flex justify-between items-center transition-all duration-300 hover:bg-gray-50 hover:text-red-500">
+    Testimoni
+    <i class="fa-solid fa-arrow-right text-xs opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+  </a>
+
+  <a href="#footer" class="mobile-link group py-3 px-4 rounded-xl flex justify-between items-center transition-all duration-300 hover:bg-gray-50 hover:text-red-500">
+    Kontak
+    <i class="fa-solid fa-arrow-right text-xs opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+  </a>
+</div>
+
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="min-h-screen flex items-center px-6 hero-grid reveal">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center w-full">
+    <div>
+      <h1 class="font-display text-7xl leading-none">
+        KOLEKSI <br>
+        <span class="text-red-500">JERSEY</span> <br>
+        PREMIUM
+      </h1>
+
+      <p class="text-gray-600 mt-6 max-w-md">
+        Jersey premimium versi non-official dengan detail maksimal dan kualitas terbaik.
+      </p>
+
+      <div class="mt-8 flex flex-wrap items-center gap-6">
+        <a href="#collections" class="bg-black text-white px-8 py-4 rounded-xl font-semibold hover:scale-105 transition shadow-lg">
+          Lihat Koleksi
+        </a>
+
+        <div class="flex gap-4 border-l border-gray-200 pl-6">
+         <a href="https://www.instagram.com/sportcozy.store?igsh=aHp2YWxteXU0dWk=" class="group w-12 h-12 border border-gray-300 rounded-xl flex items-center justify-center bg-white transition-all duration-300 hover:bg-black hover:border-black">
+        <i class="fa-brands fa-instagram text-xl text-gray-600 transition-all duration-300
+                  group-hover:bg-gradient-to-tr group-hover:from-[#f9ce34] group-hover:via-[#ee2a7b] group-hover:to-[#6228d7] 
+                  group-hover:bg-clip-text group-hover:text-transparent">
+        </i>
+        </a>
+          <a href="https://www.tiktok.com/@sportcozy.store?_r=1&_t=ZS-95grn9N4pHj" class="w-12 h-12 border border-gray-300 rounded-xl flex items-center justify-center hover:bg-black hover:text-white transition bg-white">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a href="https://id.shp.ee/ZwTUjBbZ" class="w-12 h-12 border border-gray-300 rounded-xl flex items-center justify-center hover:bg-black hover:text-orange-500 transition bg-white">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden md:block relative">
+      <img src="images/jersey_head.png" alt="Jersey Display" class="w-full max-w-lg mx-auto drop-shadow-2xl">
+      <div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gray-100 rounded-full blur-3xl opacity-60"></div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- shop -->
+<section id="shop-now" class="py-20 px-6 bg-white reveal">
+  <div class="max-w-7xl mx-auto"> <div class="text-center mb-12">
+      <p class="text-red-500 font-semibold tracking-widest text-sm uppercase mb-2">Order Now</p>
+      <h2 class="font-display text-5xl text-black">PILIH PLATFORM BELANJA</h2>
+      <div class="w-16 h-1 bg-gray-900 mx-auto mt-4"></div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-5xl mx-auto">
+      
+  <a href="https://id.shp.ee/ZwTUjBbZ" target="_blank" class="group relative overflow-hidden bg-[#EE4D2D] rounded-3xl p-10 h-72 flex flex-col justify-between hover:scale-[1.02] transition-all duration-300 shadow-xl">
+    <div class="flex justify-between items-start text-white">
+      <div class="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center backdrop-blur-md">
+        <i class="fa-solid fa-bag-shopping text-3xl"></i>
+      </div>
+      <span class="bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">Store 1</span>
+    </div>
+    <div class="text-white">
+      <h3 class="font-display text-4xl mb-2">SHOPEE UTAMA</h3>
+      <p class="text-white/80 text-sm max-w-xs leading-relaxed">Koleksi jersey klub terbaru dengan promo gratis ongkir & cashback setiap hari dapatkan promo spesial saat live dan interaksi langsung.</p>
+    </div>
+    <div class="absolute bottom-10 right-10 opacity-30 group-hover:opacity-100 group-hover:translate-x-2 transition-all">
+      <i class="fa-solid fa-arrow-right text-3xl text-white"></i>
+    </div>
+  </a>
+
+  <a href="LINK_SHOPEE_2" target="_blank" class="group relative overflow-hidden bg-[#EE4D2D] rounded-3xl p-10 h-72 flex flex-col justify-between hover:scale-[1.02] transition-all duration-300 shadow-xl">
+    <div class="flex justify-between items-start text-white">
+      <div class="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center backdrop-blur-md">
+        <i class="fa-solid fa-store text-3xl"></i>
+      </div>
+      <span class="bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">Store 2</span>
+    </div>
+    <div class="text-white">
+      <h3 class="font-display text-4xl mb-2">SHOPEE KEDUA</h3>
+      <p class="text-white/80 text-sm max-w-xs leading-relaxed">belanja jersey dengan mudah kapan saja</p>
+    </div>
+    <div class="absolute bottom-10 right-10 opacity-30 group-hover:opacity-100 group-hover:translate-x-2 transition-all">
+      <i class="fa-solid fa-arrow-right text-3xl text-white"></i>
+    </div>
+  </a>
+
+  <a href="https://www.tiktok.com/@sportcozy.store" target="_blank" class="group relative overflow-hidden bg-black rounded-3xl p-10 h-72 flex flex-col justify-between hover:scale-[1.02] transition-all duration-300 shadow-xl">
+    <div class="flex justify-between items-start text-white">
+      <div class="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center backdrop-blur-md">
+        <i class="fa-brands fa-tiktok text-3xl"></i>
+      </div>
+      <span class="bg-red-500 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">Official</span>
+    </div>
+    <div class="text-white">
+      <h3 class="font-display text-4xl mb-2">TIKTOK SHOP</h3>
+      <p class="text-white/80 text-sm max-w-xs leading-relaxed">Lihat video jersey, detail produk, dan aktivitas online shop kami. Kamu juga bisa belanja langsung lewat TikTok Shop dan ikut live kami.</p>
+    </div>
+    <div class="absolute bottom-10 right-10 opacity-30 group-hover:opacity-100 group-hover:translate-x-2 transition-all">
+      <i class="fa-solid fa-arrow-right text-3xl text-white"></i>
+    </div>
+  </a>
+
+  <a href="https://www.instagram.com/sportcozy.store" target="_blank" class="group relative overflow-hidden bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] rounded-3xl p-10 h-72 flex flex-col justify-between hover:scale-[1.02] transition-all duration-300 shadow-xl">
+    <div class="flex justify-between items-start text-white">
+      <div class="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center backdrop-blur-md">
+        <i class="fa-brands fa-instagram text-3xl"></i>
+      </div>
+      <span class="bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">Update</span>
+    </div>
+    <div class="text-white">
+      <h3 class="font-display text-4xl mb-2">INSTAGRAM</h3>
+      <p class="text-white/90 text-sm max-w-xs leading-relaxed">Kunjungi Instagram kami untuk melihat foto real jersey, detail produk, dan update koleksi terbaru.</p>
+    </div>
+    <div class="absolute bottom-10 right-10 opacity-30 group-hover:opacity-100 group-hover:translate-x-2 transition-all">
+      <i class="fa-solid fa-arrow-right text-3xl text-white"></i>
+    </div>
+  </a>
+  </div>
+</div>
+</section>
+
+<!-- KOLEKSI -->
+<section id="collections" class="py-24 px-8 bg-white reveal">
+  <div class="max-w-4xl mx-auto text-center mb-16">
+    <h2 class="font-display text-5xl text-black tracking-tight">SEMUA KOLEKSI</h2>
+    <div class="w-12 h-1.5 bg-red-500 mx-auto mt-4 rounded-full"></div>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+
+    <div class="relative group cursor-pointer overflow-hidden rounded-[2rem] shadow-lg transition-all duration-500 hover:shadow-2xl">
+      <img src="images/jersey_colection_1.jpeg" class="w-full h-[32rem] object-cover transition duration-700 group-hover:scale-110">
+      
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity"></div>
+      
+      <div class="absolute bottom-10 left-10">
+        <span class="inline-block bg-red-500 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-3 tracking-widest uppercase">
+          100+ Item
+        </span>
+        <h3 class="font-display text-4xl text-white leading-none">KLUB <br> EROPA</h3>
+        
+        <div class="mt-4 flex items-center gap-2 text-white/60 group-hover:text-white transition-colors">
+            <span class="text-xs font-semibold uppercase tracking-widest">Explore</span>
+            <i class="fa-solid fa-arrow-right-long transition-transform group-hover:translate-x-2"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative group cursor-pointer overflow-hidden rounded-[2rem] shadow-lg transition-all duration-500 hover:shadow-2xl">
+      <img src="images/jersey_colletction_2.jpeg" class="w-full h-[32rem] object-cover transition duration-700 group-hover:scale-110">
+      
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity"></div>
+      
+      <div class="absolute bottom-10 left-10">
+        <span class="inline-block bg-red-500 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-3 tracking-widest uppercase">
+          50+ Item
+        </span>
+        <h3 class="font-display text-4xl text-white leading-none">JERSEY <br> TIMNAS</h3>
+        
+        <div class="mt-4 flex items-center gap-2 text-white/60 group-hover:text-white transition-colors">
+            <span class="text-xs font-semibold uppercase tracking-widest">Explore</span>
+            <i class="fa-solid fa-arrow-right-long transition-transform group-hover:translate-x-2"></i>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- KEUNGGULAN -->
+<section id="why" class="py-20 px-6 bg-gray-50 reveal">
+  <div class="max-w-6xl mx-auto text-center mb-14">
+    <p class="text-gray-400 text-sm tracking-widest uppercase">Mengapa Kami</p>
+    <h2 class="font-display text-5xl text-black">KEUNGGULAN KAMI</h2>
+    <div class="w-12 h-1 bg-gray-300 mx-auto mt-4 rounded-full"></div>
+  </div>
+
+  <div class="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+
+    <!-- CARD 1 -->
+    <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-300 text-center hover:shadow-md transition">
+      <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-xl bg-gray-200">
+        🎁
+      </div>
+      <h3 class="font-semibold text-black mb-2">Exclusive Bonus & Premium Packaging</h3>
+      <p class="text-gray-500 text-sm">
+        Free sticker, photo card, dan box eksklusif di setiap order—siap jadi koleksi.
+      </p>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-300 text-center hover:shadow-md transition">
+      <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-xl bg-gray-200">
+        🚚
+      </div>
+      <h3 class="font-semibold text-black mb-2">Pengiriman Cepat</h3>
+      <p class="text-gray-500 text-sm">
+        Estimasi 1-3 hari ke seluruh Indonesia.
+      </p>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-300 text-center hover:shadow-md transition">
+      <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-xl bg-gray-200">
+        ✍️
+      </div>
+      <h3 class="font-semibold text-black mb-2">Custom Nameset & Quality Control</h3>
+      <p class="text-gray-500 text-sm">
+        Tambahkan nama & nomor sesuai keinginanmu, dan setiap jersey akan melalui pengecekan detail sebelum dikirim untuk memastikan kualitas terbaik.
+      </p>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-300 text-center hover:shadow-md transition">
+      <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-xl bg-gray-200">
+        💬
+      </div>
+      <h3 class="font-semibold text-black mb-2">CS 24/7</h3>
+      <p class="text-gray-500 text-sm">
+        Siap bantu kapan saja via WhatsApp.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- TESTIMONI -->
+<section id="testimoni" class="py-24 px-6 bg-gray-0 reveal">
+
+  <div class="max-w-6xl mx-auto">
+
+    <!-- HEADER -->
+    <div class="text-center mb-16">
+      <p class="text-sm tracking-widest text-gray-500 uppercase">Testimoni</p>
+      <h2 class="font-display text-5xl text-black mt-2">KATA PELANGGAN</h2>
+      <div class="w-14 h-1 bg-gray-400 mx-auto mt-4 rounded-full"></div>
+    </div>
+
+    <!-- CARDS -->
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <!-- CARD 1 -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition">
+
+        <!-- STAR -->
+        <div class="flex text-yellow-400 mb-4 text-sm">
+          ★★★★★
+        </div>
+
+        <!-- TEXT -->
+        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+          "Jersey Real Madrid-nya kualitasnya gila sih, detailnya mirip banget sama versi pemain. Udah beli beberapa kali dan selalu puas."
+        </p>
+
+        <!-- USER -->
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center text-sm font-semibold">
+            AR
+          </div>
+          <div>
+            <p class="text-black text-sm font-semibold">Andi Rizky</p>
+            <p class="text-gray-500 text-xs">Jakarta · Verified Buyer</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition">
+
+        <div class="flex text-yellow-400 mb-4 text-sm">
+          ★★★★★
+        </div>
+
+        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+          "Pesan Sabtu pagi, Senin udah sampai. Custom nama & nomor juga rapi banget. Bakal order lagi sih."
+        </p>
+
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center text-sm font-semibold">
+            DF
+          </div>
+          <div>
+            <p class="text-black text-sm font-semibold">Dani Fitria</p>
+            <p class="text-gray-500 text-xs">Surabaya · Verified Buyer</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition">
+
+        <div class="flex text-yellow-400 mb-4 text-sm">
+          ★★★★★
+        </div>
+
+        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+          "Udah coba banyak toko, tapi di sini paling konsisten. Bahannya enak, cutting-nya juga pas di badan."
+        </p>
+
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-gray-700 text-white flex items-center justify-center text-sm font-semibold">
+            BH
+          </div>
+          <div>
+            <p class="text-black text-sm font-semibold">Bagas Handoko</p>
+            <p class="text-gray-500 text-xs">Bandung · Verified Buyer</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- RETURN POLICY -->
+<section id="return" class="py-20 px-6 bg-gray-50 reveal">
+  <div class="max-w-5xl mx-auto">
+
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <h2 class="font-display text-5xl text-black">KEBIJAKAN RETURN</h2>
+      <div class="w-16 h-1 bg-gray-300 mx-auto mt-4 rounded-full"></div>
+      <p class="text-gray-500 mt-4 text-sm max-w-xl mx-auto">
+        Kami memastikan setiap produk sampai dengan kondisi terbaik. Berikut kebijakan penukaran & pengembalian.
+      </p>
+    </div>
+
+    <!-- Content -->
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <!-- Syarat -->
+      <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+        <h3 class="font-semibold text-black mb-4">Syarat Pengembalian</h3>
+        <ul class="space-y-3 text-gray-600 text-sm">
+          <li>• Produk belum dipakai dan masih dalam kondisi baru</li>
+          <li>• Label/tag masih terpasang</li>
+          <li>• Pengajuan maksimal 2x24 jam setelah barang diterima</li>
+          <li>• Menyertakan bukti foto/video unboxing</li>
+        </ul>
+      </div>
+
+      <!-- Tidak Berlaku -->
+      <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+        <h3 class="font-semibold text-black mb-4">Tidak Berlaku Jika</h3>
+        <ul class="space-y-3 text-gray-600 text-sm">
+          <li>• Salah memilih ukuran oleh pembeli</li>
+          <li>• Kerusakan akibat penggunaan pribadi</li>
+          <li>• Tidak ada bukti unboxing</li>
+        </ul>
+      </div>
+
+      <!-- Proses -->
+      <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm md:col-span-2">
+        <h3 class="font-semibold text-black mb-4">Proses Return</h3>
+        <ol class="space-y-3 text-gray-600 text-sm">
+          <li>1. Hubungi admin melalui WhatsApp</li>
+          <li>2. Kirim bukti foto/video produk</li>
+          <li>3. Tunggu konfirmasi dari tim kami</li>
+          <li>4. Kirim kembali produk sesuai instruksi</li>
+        </ol>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- SIZE GUIDE -->
+<section id="size" class="py-20 px-6 bg-white reveal">
+  <div class="max-w-6xl mx-auto">
+
+    <!-- Header -->
+    <div class="text-center mb-14">
+      <h2 class="font-display text-5xl text-black">PANDUAN UKURAN</h2>
+      <div class="w-16 h-1 bg-gray-300 mx-auto mt-4 rounded-full"></div>
+      <p class="text-gray-500 mt-4 text-sm">
+        Pilih ukuran yang paling nyaman sesuai kebutuhan kamu.
+      </p>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- PLAYER ISSUE -->
+      <div class="border border-gray-200 rounded-2xl p-6 bg-gray-50 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-black mb-2">Player Issue</h3>
+        <p class="text-sm text-gray-500 mb-4">Fit lebih slim seperti pemain</p>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm text-left">
+            <thead class="text-gray-600 border-b">
+              <tr>
+                <th class="py-2">Size</th>
+                <th class="py-2">Panjang</th>
+                <th class="py-2">Lebar</th>
+              </tr>
+            </thead>
+            <tbody class="text-gray-700">
+              <tr class="border-b"><td>S</td><td>67 cm</td><td>47 cm</td></tr>
+              <tr class="border-b"><td>M</td><td>69 cm</td><td>49 cm</td></tr>
+              <tr class="border-b"><td>L</td><td>72 cm</td><td>50 cm</td></tr>
+              <tr class="border-b"><td>XL</td><td>74 cm</td><td>54 cm</td></tr>
+              <tr><td>XXL</td><td>76 cm</td><td>58 cm</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="text-xs text-gray-400 mt-3">
+          Panjang × Lebar • Toleransi ±1-2 cm
+        </p>
+      </div>
+
+      <!-- SUPPORTER / FANS -->
+      <div class="border border-gray-200 rounded-2xl p-6 bg-gray-50 hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-black mb-2">Supporter Version</h3>
+        <p class="text-sm text-gray-500 mb-4">Fit lebih santai & nyaman dipakai harian</p>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm text-left">
+            <thead class="text-gray-600 border-b">
+              <tr>
+                <th class="py-2">Size</th>
+                <th class="py-2">Panjang</th>
+                <th class="py-2">Lebar</th>
+              </tr>
+            </thead>
+            <tbody class="text-gray-700">
+              <tr class="border-b"><td>S</td><td>72 cm</td><td>50 cm</td></tr>
+              <tr class="border-b"><td>M</td><td>74 cm</td><td>52 cm</td></tr>
+              <tr class="border-b"><td>L</td><td>76 cm</td><td>54 cm</td></tr>
+              <tr class="border-b"><td>XL</td><td>78 cm</td><td>56 cm</td></tr>
+              <tr><td>XXL</td><td>80 cm</td><td>58 cm</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="text-xs text-gray-400 mt-3">
+          Lebar × Panjang • Toleransi ±1-2 cm
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Tips -->
+    <div class="mt-10 bg-red-100 p-6 rounded-2xl border border-gray-500">
+      <h3 class="font-semibold text-black mb-3">Tips Memilih Ukuran</h3>
+      <ul class="text-gray-700 text-sm space-y-2">
+        <li>• Player Issue lebih ketat (slim fit)</li>
+        <li>• Supporter lebih nyaman untuk daily wear</li>
+        <li>• Jika ragu, naik 1 size</li>
+        <li>• Perbedaan ±1-2 cm masih normal</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<footer id="footer" class="bg-gray-200 border-t border-gray-200 mt-0">
+  <div class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
+
+    <div>
+      <h2 class="font-display text-2xl mb-4">
+        Sport<span class="text-red-500">Cozy</span>
+      </h2>
+      <p class="text-gray-600 text-sm">
+        Jersey kualitas premium dengan detail terbaik dan harga terjangkau.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="font-semibold mb-4">Menu</h3>
+      <ul class="space-y-2 text-gray-600 text-sm">
+        <li><a href="#hero" class="hover:text-black">Home</a></li>
+        <li><a href="#collections" class="hover:text-black">Koleksi</a></li>
+        <li><a href="#why" class="hover:text-black">Keunggulan</a></li>
+        <li><a href="#testimoni" class="hover:text-black">Testimoni</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-semibold mb-4">Bantuan</h3>
+      <ul class="space-y-2 text-gray-600 text-sm">
+        <li><a href="#return" class="hover:text-black">Kebijakan Return</a></li>
+        <li><a href="#size" class="hover:text-black">Panduan Ukuran</a></li>
+      </ul>
+    </div>
+
+    <div>
+  <h3 class="font-semibold mb-4">Follow Kami</h3>
+  <div class="flex gap-4 mb-6">
+    <a href="https://www.instagram.com/sportcozy.store" class="group w-12 h-12 border border-gray-300 rounded-xl flex items-center justify-center bg-white transition-all duration-300 hover:bg-black hover:border-black">
+      <i class="fa-brands fa-instagram text-xl text-gray-600 group-hover:bg-gradient-to-tr group-hover:from-[#f9ce34] group-hover:via-[#ee2a7b] group-hover:to-[#6228d7] group-hover:bg-clip-text group-hover:text-transparent"></i>
+    </a>
+    
+    <a href="https://www.tiktok.com/@sportcozy.store" class="w-12 h-12 border border-gray-300 rounded-xl flex items-center justify-center hover:bg-black hover:text-white transition bg-white text-gray-600">
+      <i class="fa-brands fa-tiktok text-xl"></i>
+    </a>
+    
+    <a href="https://id.shp.ee/ZwTUjBbZ" class="w-12 h-12 border border-gray-300 rounded-xl flex items-center justify-center hover:bg-black hover:text-orange-500 transition bg-white text-gray-600">
+      <i class="fa-solid fa-bag-shopping text-xl"></i>
+    </a>
+  </div>
+
+  <h3 class="font-semibold mb-3">Layanan CS</h3>
+  <a href="https://wa.me/6285282873285" class="inline-flex items-center gap-3 px-4 py-2 border border-gray-300 bg-white rounded-xl hover:bg-green-50 hover:border-green-500 transition-all group">
+    <div class="w-8 h-8 rounded-lg bg-green-500 flex items-center justify-center text-white shadow-sm group-hover:scale-110 transition">
+      <i class="fa-brands fa-whatsapp text-lg"></i>
+    </div>
+    <div class="flex flex-col">
+      <span class="text-[10px] uppercase tracking-wider text-gray-400 leading-none">Chat Sekarang</span>
+      <span class="text-sm font-semibold text-gray-700">+62 852-8287-3285</span>
+    </div>
+  </a>
+</div>
+
+  </div>
+
+  <div class="text-center text-gray-500 text-sm pb-6">
+    © 2026 SportCozy
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
